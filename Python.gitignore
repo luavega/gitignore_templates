@@ -1,12 +1,16 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+# Files generated when working, dont need any version controlled
+__pycache__/ # Python compiles when executed
 *.py[cod]
 *$py.class
+*.pyd
+*.pyc
 
-# C extensions
+# C extensions: shared object files are binary files produced when building Python C extensions.
+# They are platform-specific and should not be version-controlled.
 *.so
 
-# Distribution / packaging
+# Distribution / packaging: files related to Python's packaging ecosystem, not needed in version control.
 .Python
 build/
 develop-eggs/
@@ -26,7 +30,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller
+# PyInstaller: tool for creating standalone exe. Files specific to the packaging process, not needed for VC.
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
@@ -36,7 +40,8 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit test / coverage reports: created by testing and coverage tools like pytest,nose,tox,nox.
+# They store test results, virtual environments for testing and cached data.
 htmlcov/
 .tox/
 .nox/
@@ -51,10 +56,11 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Translations
+# Translations: related to internationalization (i18n) and localization (l10n).
 *.mo
 *.pot
 
+# Django, flask, scrapy and other frameworks
 # Django stuff:
 *.log
 local_settings.py
@@ -68,6 +74,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
+# Documentation and builders
 # Sphinx documentation
 docs/_build/
 
@@ -75,6 +82,7 @@ docs/_build/
 .pybuilder/
 target/
 
+# Jupyter, IPython and other development tools
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -119,7 +127,7 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments: theyc ontain binaries and packages specific to one's setup
 .env
 .venv
 env/
@@ -152,9 +160,33 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# PyCharm
+# PyCharm: depending on the IDE
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# OS generate files: Windows image file caches
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Folder config file
+Desktop.ini
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.old
+*.save
+
+# Log files
+*.log
